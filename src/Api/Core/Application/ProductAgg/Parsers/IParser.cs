@@ -8,9 +8,6 @@ namespace ApiCsharp.Api.Core.Application.ProductAgg.Parsers
         TTo Parse(TFrom from);
     }
 
-    /// <summary>
-    /// Abstract factory
-    /// </summary>
     public interface IProdutoParseFactory
     {
         IParser<Produto, IProdutoView> GetProdutoParse();

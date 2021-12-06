@@ -1,12 +1,9 @@
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
-using Microsoft.EntityFrameworkCore.Query.Internal;
 using Microsoft.Extensions.Logging;
 using ApiCsharp.Api.Core.Application.ProductAgg.Contracts;
 using ApiCsharp.Api.Core.Application.ProductAgg.Parsers;
-using ApiCsharp.Api.Core.Domain.EstoqueAgg.Entities;
-using ApiCsharp.Api.Core.Domain.EstoqueAgg.Repositories;
 using ApiCsharp.Api.Core.Domain.ProductAgg.Entities;
 using ApiCsharp.Api.Core.Domain.ProductAgg.Repositories;
 using ApiCsharp.Api.Core.Domain.Shared.Exceptions;
