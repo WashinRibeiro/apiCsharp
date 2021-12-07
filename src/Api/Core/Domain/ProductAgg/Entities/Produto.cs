@@ -4,7 +4,7 @@ using System.Collections.Immutable;
 using MediatR;
 using ApiCsharp.Api.Core.Application.ProductAgg.Contracts;
 using ApiCsharp.Api.Core.Domain.ProductAgg.Events;
-using ApiCsharp.Pedido.Api.Core.Domain.Shared;
+using ApiCsharp.Api.Core.Domain.Shared;
 
 namespace ApiCsharp.Api.Core.Domain.ProductAgg.Entities
 {

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using MediatR;
 
-namespace ApiCsharp.Pedido.Api.Core.Domain.Shared
+namespace ApiCsharp.Api.Core.Domain.Shared
 {
     public interface IAggregateRoot
     {

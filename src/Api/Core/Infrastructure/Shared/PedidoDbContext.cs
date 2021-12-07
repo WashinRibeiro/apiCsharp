@@ -4,16 +4,19 @@ using Microsoft.EntityFrameworkCore;
 using ApiCsharp.Api.Core.Domain.EstoqueAgg.Entities;
 using ApiCsharp.Api.Core.Domain.ProductAgg.Entities;
 using ApiCsharp.Api.Core.Domain.Shared.Repositories;
-using ApiCsharp.Pedido.Api.Core.Domain.Shared;
+using ApiCsharp.Api.Core.Domain.Shared;
+using System;
 
 namespace ApiCsharp.Api.Core.Infrastructure.Shared
 {
     public class PedidoDbContext : DbContext, IUnitOfWork
     {
+        private readonly DbContextOptions<PedidoDbContext> options;
         private readonly IMediator _mediator;
 
         public PedidoDbContext(DbContextOptions<PedidoDbContext> options, IMediator mediator) : base(options)
         {
+            this.options = options;
             _mediator = mediator;
         }
         

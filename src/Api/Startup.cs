@@ -21,6 +21,7 @@ using ApiCsharp.Api.Core.Infrastructure.EstoqueAgg.Repositories;
 using ApiCsharp.Api.Core.Infrastructure.ProductAgg.Repositories;
 using ApiCsharp.Api.Core.Infrastructure.Shared;
 
+
 namespace ApiCsharp.Api
 {
     public class Startup
@@ -54,11 +55,10 @@ namespace ApiCsharp.Api
                 c.IncludeXmlComments(filePath);
             });
 
-           // services.AddDbContext<PedidoDbContext>(options =>
-            //{
-            //    options
-            //    .UseSqlite(Configuration.GetConnectionString("Sqlite"));
-            //});
+            services.AddDbContext<PedidoDbContext>(options =>
+            {
+                DbContextOptionsBuilder dbContextOptionsBuilder = options.UseSqlite(Configuration.GetConnectionString("Sqlite"));
+            });
 
             services.AddScoped<IProdutoRepositorio, ProdutoRepositorio>();
             services.AddScoped<IEstoqueRepository, EstoqueRepository>();
