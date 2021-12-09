@@ -1,4 +1,4 @@
-## AV2 - DESIGN E PROGRAMAÇÃO ORIENTADA A OBJETOS
+## AV2 DE DESIGN E PROGRAMAÇÃO ORIENTADA A OBJETOS
 ### 2021/2 - 4º Período - Ciência da Computação
 
 ## Proposta de avaliação:
